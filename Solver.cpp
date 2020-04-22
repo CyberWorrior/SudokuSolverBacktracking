@@ -33,7 +33,7 @@ bool solver(int array[maxRow][maxCol])
         {   
             system("CLS");
             printSudoku(array);
-            Sleep(5);  //vary the value to see the output slower or faster
+            Sleep(2);  //vary the value to see the output slower or faster
 
             array[row][col] = num;
 
@@ -159,6 +159,7 @@ int main()
     {
         cout << "Unable to solve sudoku";
     }
+    system("pause");
 }
 
 
