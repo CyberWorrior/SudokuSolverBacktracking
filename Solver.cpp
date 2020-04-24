@@ -30,10 +30,10 @@ bool solver(int array[maxRow][maxCol])
     for (int num = 1; num <= max; num++)
     {
         if (checkSafe(array, row, col, num))
-        {   
+        {
             system("CLS");
             printSudoku(array);
-            Sleep(2);  //vary the value to see the output slower or faster
+            Sleep(float(0.3));  //vary the value to see the output slower or faster
 
             array[row][col] = num;
 
